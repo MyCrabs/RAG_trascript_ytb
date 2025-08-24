@@ -4,13 +4,12 @@
 Dự án này tập trung vào việc **áp dụng và hiểu cách hoạt động của RAG (Retrieval-Augmented Generation)**.  
 Thay vì để mô hình LLM phải nhớ tất cả thông tin, ta sẽ xây dựng pipeline cho phép mô hình **truy xuất thông tin từ nguồn dữ liệu ngoài**, sau đó mới sinh câu trả lời.  
 
-Trong dự án này, nguồn dữ liệu chính là **transcript (lời thoại) của video YouTube**, được thu thập trước đó. Từ dữ liệu văn bản này, ta tích hợp với **LLM Gemini 1.5** để tạo nên hệ thống hỏi đáp thông minh, dựa trực tiếp trên nội dung của video.
+Trong dự án này, nguồn dữ liệu chính là **transcript (lời thoại) của video YouTube và nội dung 1 file PDF**, được thu thập trước đó. Từ dữ liệu văn bản này, ta tích hợp với **LLM Gemini 1.5** để tạo nên hệ thống hỏi đáp thông minh, dựa trực tiếp trên nội dung của video.
 
 ---
 
 ##  Quy trình hoạt động
-1. **Lấy transcript của video YouTube**  
-   - Sử dụng `youtube-transcript-api` để thu thập lời thoại của video.
+1. **Lấy transcript của video YouTube và nội dung file PDF**  
    - Lưu dữ liệu thành văn bản thô để xử lý sau.
 
 2. **Xử lý và chia nhỏ dữ liệu**  
